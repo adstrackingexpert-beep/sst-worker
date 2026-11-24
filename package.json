@@ -1,0 +1,19 @@
+{
+  "name": "sst-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GTM + Cloudflare Server Side Tracking Worker (Meta, TikTok, GA4)",
+  "cloudflare": {
+    "bindings": {
+      "ALLOWED_DOMAIN": { "description": "আপনার ওয়েবসাইট ডোমেইন, যেমন client.com (একাধিক হলে কমা দিয়ে)" },
+      "META_PIXEL_ID": { "description": "Meta Pixel ID (না থাকলে ফাঁকা রাখুন)" },
+      "META_ACCESS_TOKEN": { "description": "Meta Conversions API Access Token" },
+      "META_TEST_EVENT_CODE": { "description": "Meta Test Event Code (লাইভে গেলে মুছে দিন)" },
+      "TIKTOK_PIXEL_ID": { "description": "TikTok Pixel ID" },
+      "TIKTOK_ACCESS_TOKEN": { "description": "TikTok Events API Access Token" },
+      "TIKTOK_TEST_EVENT_CODE": { "description": "TikTok Test Event Code (লাইভে গেলে মুছে দিন)" },
+      "GA4_MEASUREMENT_ID": { "description": "GA4 Measurement ID, যেমন G-XXXXXXXXXX" },
+      "GA4_API_SECRET": { "description": "GA4 Measurement Protocol API Secret" }
+    }
+  }
+}
